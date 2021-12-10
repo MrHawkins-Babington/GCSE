@@ -1,4 +1,5 @@
-#Put your new code below this line
+#Copy this code into a new Python file and save it
+#Put your new code as instructed below this line
 
 
 print()
