@@ -30,7 +30,7 @@ cont=input("The deck has been shuffled. Are you ready to play? Press any key to 
 
 #gives each player the top card on the deck
 #removes the card taken from the deck
-for x in range(0,29):
+for x in range(0,15):
     player1 = shuffle[0]
     player2 = shuffle[1]
     shuffle.remove(player1)
@@ -165,6 +165,11 @@ for x in range(0,29):
 
     cont=input("press any key to continue")
 
-
-print("player 1 got",player1Score)
-print("player 2 got",player2Score)
+if player1Score == player2Score:
+    print("Wow, a draw! Well done both players.")
+elif player1Score > player2Score:
+    print("Player 1 got ",player1Score, "and player 2 got ",player2Score)
+    print("Player 1 wins!")
+else:
+    print("Player 2 got ",player2Score, "and player 1 got ",player1Score)
+    print("Player 2 wins!")
