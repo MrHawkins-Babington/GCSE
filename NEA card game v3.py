@@ -2,11 +2,14 @@
 #shuffles 30 cards and creates a random deck
 
 #v3 - trying to add the player validation code
+#need more research
+#found out how to read a file
+#need to find out how to check if the file contains specific text
 
 import random
 
-player1Name=('')
-player2Name=('')
+#player1Name=('')
+#player2Name=('')
 player1Val=0        #variable used to assign a numerical value for each drawn card
 player2Val=0
 player1Score=0      #running score during game for player 1 and player 2 
@@ -19,28 +22,28 @@ player2deck=[]
 #file with player details = cardGameUsers.txt
 Player1Name=input("Please enter your username.")
 
-with open('cardGameUsers.txt','r') as f:
-    for line in f:
-        print(line,end='')
-
-    f_contents = f.read()
-    if f_contents == Player1Name:
-        print("Welcome, you may play this game")
-    else:
-        print("Sorry you are not authorised to play.")
+##with open('cardGameUsers.txt','r') as f:
+##    for line in f:
+##        print(line,end='')
+##
+##    f_contents = f.read()
+##    if f_contents == Player1Name:
+##        print("Welcome, you may play this game")
+##    else:
+##        print("Sorry you are not authorised to play.")
 
 #Player 2 enters details which are authenticated to allow play
 Player2Name=input("Please enter your username.")
 
-with open('cardGameUsers.txt','r') as f:
-    for line in f:
-        print(line,end='')
-
-    f_contents = f.read()
-    if f_contents == Player1Name:
-        print("Welcome, you may play this game")
-    else:
-        print("Sorry you are not authorised to play.")
+##with open('cardGameUsers.txt','r') as f:
+##    for line in f:
+##        print(line,end='')
+##
+##    f_contents = f.read()
+##    if f_contents == Player1Name:
+##        print("Welcome, you may play this game")
+##    else:
+##        print("Sorry you are not authorised to play.")
 
 #the 30 cards that are in the deck placed into an array
 deck=["r1","r2","r3","r4","r5","r6","r7","r8","r9","r10",\
