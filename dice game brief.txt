@@ -1,0 +1,57 @@
+Katarina is developing a two-player dice game. 
+The players roll two 6-sided dice each and get points depending on what they roll. 
+There are 5 rounds in a game. 
+In each round, each player rolls the two dice. 
+
+The rules are:
+•	The points rolled on each player’s dice are added to their score.
+•	If the total is an even number, an additional 10 points are added to their score.
+•	If the total is an odd number, 5 points are subtracted from their score.
+•	If they roll a double, they get to roll one extra die and get the number of points rolled added to their score.
+•	The score of a player cannot go below 0 at any point.
+•	The person with the highest score at the end of the 5 rounds wins.
+•	If both players have the same score at the end of the 5 rounds, they each roll 1 die and whoever gets the highest score wins (this repeats until someone wins). 
+
+Only authorised players can play the game. 
+
+Where appropriate, input from the user should be validated. 
+
+Design, develop, test and evaluate a program that:
+1.	Allows two players to enter their details, which are then authenticated to ensure that they are authorised players. - NOT COMPLETE
+2.	Allows each player to roll two 6-sided dice. COMPLETE
+3.	Calculates and outputs the points for each round and each player’s total score. COMPLETE
+4.	Allows the players to play 5 rounds. COMPLETE 12.05.2022
+5.	If both players have the same score after 5 rounds, allows each player to roll 1 die each until someone wins. NOT COMPLETE
+6.	Outputs who has won at the end of the 5 rounds. COMPLETE
+7.	Stores the winner’s score, and their name, in an external file. NOT COMPLETE
+8.	Displays the score and player name of the top 5 winning scores from the external file. NOT COMPLETE
+
+#Code development log
+
+dice game 001.py
+Import random and set up dice throws
+
+dice game 002.py
+code for what score to give if the throw is a double, if the code isn't a double and how to stop the code going below 0
+
+dice game 003.py
+logical error in code adding up score - fixed
+
+dice game 004.py
+code duplicated to create a turn for player 1 repeated for player 2
+
+dice game 005.py
+adding while loop to allow 5 rounds
+
+dice game 006.py
+When I ran version 005 the game whizzed through and played all 5 rounds without stopping.
+I added an input when each player started their go so they were in control
+
+dice game 007.py
+Added a points tallying system to add up each players score
+
+dice game 008.py
+Added a total points variable
+
+dice game 009.py
+Improved readability through the addition of whitespace
